@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- view Item Modal -->
+        <div class="modal fade" id="view-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Create User</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form data-toggle="validator" >
+                            <input type="hidden" name="command" value="view">
+                            <input type="hidden" name="id" class="view-id">	
+                            <div class="form-group">
+                                <label class="control-label" for="title">User name:</label>
+                                <input type="text" name="username" class="form-control" placeholder="User name"  data-error="Please enter username"  readonly/>
+                                <div class="help-block with-errors"></div>
+                            </div>	
+                            <div class="form-group">
+                                <label class="control-label" for="title">First name:</label>
+                                <input type="text" name="firstname" class="form-control"  placeholder="First name" data-error="Please enter firstname" readonly />
+                                <div class="help-block with-errors"></div>
+                            </div>	
+                            <div class="form-group">
+                                <label class="control-label" for="title">Last name:</label>
+                                <input type="text" name="lastname" class="form-control"  placeholder="Last name" data-error="Please enter lastname" readonly />
+                                <div class="help-block with-errors"></div>
+                            </div>			
+                            <div class="form-group">
+                                <label class="control-label" for="title">Roles:</label>
+                                <select  name="roles" class="form-control" data-error="Please enter roles" disabled >
+                                    <option value="1">Admin</option>
+                                    <option value="2">User</option>
+                                    <option value="3">Visiter</option>
+                                    <option value="4">Normal</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>	
+                            <div class="form-group">
+                                <button  data-dismiss="modal" class="btn btn-block btn-warning">Close</button>
+                            </div>	
+                        </form>	
+                    </div>
+                </div>	
+            </div>
+        </div>
+
+        <!-- Create Item Modal -->
+        <div class="modal fade" id="create-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Create User</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form data-toggle="validator" >
+                            <input type="hidden" name="command" value="register">
+                            <div class="form-group">
+                                <label class="control-label" for="title">User name:</label>
+                                <input type="text" name="username" class="form-control" placeholder="User name"  data-error="Please enter username"  required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="title">Password:</label>
+                                <input type="password" name="password" id="password"  placeholder="Password" class="form-control" data-error="Please enter password" required />
+                                <div class="help-block with-errors"></div>
+                            </div>	
+                            <div class="form-group">
+                                <label class="control-label" for="title">Re-password:</label>
+                                <input type="password" name="password2" placeholder="Re-password" data-match="#password" data-match-error="Password doesn't matched." class="form-control" data-error="Please enter re-password" required />
+                                <div class="help-block with-errors"></div>
+                            </div>		
+                            <div class="form-group">
+                                <label class="control-label" for="title">First name:</label>
+                                <input type="text" name="firstname" class="form-control"  placeholder="First name" data-error="Please enter firstname" required />
+                                <div class="help-block with-errors"></div>
+                            </div>	
+                            <div class="form-group">
+                                <label class="control-label" for="title">Last name:</label>
+                                <input type="text" name="lastname" class="form-control"  placeholder="Last name" data-error="Please enter lastname" required />
+                                <div class="help-block with-errors"></div>
+                            </div>				
+                            <div class="form-group">
+                                <div id='message-create' class="col-sm-offset-2 col-sm-10">
+                                </div>
+                            </div>	
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-block create-item-submit btn-success">Create</button>
+                                <button  data-dismiss="modal" class="btn btn-block btn-warning">Close</button>
+                            </div>	
+                        </form>	
+                    </div>
+                </div>	
+            </div>
+        </div>
+
+        <!-- Edit Item Modal -->
+        <div class="modal fade" id="edit-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Edit User</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form data-toggle="validator" >
+                            <input type="hidden" name="command" value="edit">
+                            <input type="hidden" name="idedit" class="edit-id" value ="">	
+                            <div class="form-group">
+                                <label class="control-label" for="title">User name:</label>
+                                <input type="text" name="username" class="form-control" data-error="Please enter username"  disabled/>
+                                <div class="help-block with-errors"></div>
+                            </div>	
+                            <div class="form-group">
+                                <label class="control-label" for="title">First name:</label>
+                                <input type="text" name="firstname" class="form-control" data-error="Please enter firstname" required />
+                                <div class="help-block with-errors"></div>
+                            </div>	
+                            <div class="form-group">
+                                <label class="control-label" for="title">Last name:</label>
+                                <input type="text" name="lastname" class="form-control" data-error="Please enter lastname" required />
+                                <div class="help-block with-errors"></div>
+                            </div>					
+                            <div class="form-group">
+                                <label class="control-label" for="title">Roles:</label>
+                                <select  name="roles" class="form-control" data-error="Please enter roles" required >
+                                    <option value="1">Admin</option>
+                                    <option value="2">User</option>
+                                    <option value="3">Visiter</option>
+                                    <option value="0">Normal</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <div id='message-edit' class="col-sm-offset-2 col-sm-10">
+                                </div>
+                            </div>	
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success edit-item-submit btn-block">Update</button>
+                                <button  data-dismiss="modal" class="btn btn-block btn-warning">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>	
+    </body>
+</html>

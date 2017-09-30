@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+	<welcome-file-list>
+		<welcome-file>public/index.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>greetServlet</servlet-name>
+		<servlet-class>lemin.server.GreetingServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>greetServlet</servlet-name>
+		<url-pattern>/giapha_finish/greet</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>GiaPha</servlet-name>
+		<servlet-class>com.lemin.giapha.GiaPhaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GiaPha</servlet-name>
+		<url-pattern>/giapha</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddGenealogyServlet</servlet-name>
+		<servlet-class>controller.AddGenealogyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddGenealogyServlet</servlet-name>
+		<url-pattern>/AddGenealogyServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddPeopleServlet</servlet-name>
+		<servlet-class>controller.AddPeopleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddPeopleServlet</servlet-name>
+		<url-pattern>/AddPeopleServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteGenealogySeverlet</servlet-name>
+		<servlet-class>controller.DeleteGenealogySeverlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteGenealogySeverlet</servlet-name>
+		<url-pattern>/DeleteGenealogySeverlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeletePeopleServlet</servlet-name>
+		<servlet-class>controller.DeletePeopleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeletePeopleServlet</servlet-name>
+		<url-pattern>/DeletePeopleServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>DeleteUserManagerServlet</servlet-name>
+		<servlet-class>controller.DeleteUserManagerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteUserManagerServlet</servlet-name>
+		<url-pattern>/DeleteUserManagerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditGenealogyManagerServlet</servlet-name>
+		<servlet-class>controller.EditGenealogyManagerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditGenealogyManagerServlet</servlet-name>
+		<url-pattern>/EditGenealogyManagerServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>EditGenealogyServlet</servlet-name>
+		<servlet-class>controller.EditGenealogyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditGenealogyServlet</servlet-name>
+		<url-pattern>/EditGenealogyServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditPeopleManagerServlet</servlet-name>
+		<servlet-class>controller.EditPeopleManagerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditPeopleManagerServlet</servlet-name>
+		<url-pattern>/EditPeopleManagerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditPeopleServlet</servlet-name>
+		<servlet-class>controller.EditPeopleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditPeopleServlet</servlet-name>
+		<url-pattern>/EditPeopleServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditUserManagerServlet</servlet-name>
+		<servlet-class>controller.EditUserManagerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditUserManagerServlet</servlet-name>
+		<url-pattern>/EditUserManagerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GenealogyManagerServlet</servlet-name>
+		<servlet-class>controller.GenealogyManagerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenealogyManagerServlet</servlet-name>
+		<url-pattern>/GenealogyManagerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>controller.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>controller.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PeopleManagerServlet</servlet-name>
+		<servlet-class>controller.PeopleManagerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PeopleManagerServlet</servlet-name>
+		<url-pattern>/PeopleManagerServlet</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>controller.RegiseterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/RegisterServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>UserManagerServlet</servlet-name>
+		<servlet-class>controller.UserManagerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserManagerServlet</servlet-name>
+		<url-pattern>/UserManagerServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>ViewGenealogyServlet</servlet-name>
+		<servlet-class>controller.ViewGenealogyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewGenealogyServlet</servlet-name>
+		<url-pattern>/ViewGenealogyServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>ViewImageServlet</servlet-name>
+		<servlet-class>controller.ViewImageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewImageServlet</servlet-name>
+		<url-pattern>/ViewImageServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>ViewPeopleServlet</servlet-name>
+		<servlet-class>controller.ViewPeopleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewPeopleServlet</servlet-name>
+		<url-pattern>/ViewPeopleServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
