@@ -23,7 +23,8 @@ public class ScratchSpace {
     public static String createLicenseKey(String userName, String email, String action) {
         final String s = userName + "|" + email + "|" + action;
         final HashFunction hashFunction = Hashing.sha1();
-        final HashCode hashCode = hashFunction.hashString(s);
+		CharSequence cs = s;
+        final HashCode hashCode = hashFunction.hashString(cs);
         final String upper = hashCode.toString().toUpperCase();
         return group(upper);
     }
