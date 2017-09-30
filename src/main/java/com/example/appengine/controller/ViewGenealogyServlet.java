@@ -10,11 +10,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import dao.GenealogyDAO;
-import dao.PeopleDAO;
-import model.Genealogy;
-import model.People;
-import model.User;
+import com.example.appengine.dao.GenealogyDAO;
+import com.example.appengine.dao.PeopleDAO;
+import com.example.appengine.model.Genealogy;
+import com.example.appengine.model.People;
+import com.example.appengine.model.User;
 import net.sf.json.JSONObject;
 
 /**

@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import dao.GenealogyDAO;
-import model.Genealogy;
+import com.example.appengine.dao.GenealogyDAO;
+import com.example.appengine.model.Genealogy;
 
 /**
  * Servlet implementation class DeleteGenealogySeverlet

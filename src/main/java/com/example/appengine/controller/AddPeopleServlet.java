@@ -17,9 +17,9 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
-import dao.PeopleDAO;
+import com.example.appengine.dao.PeopleDAO;
 
-import model.People;
+import com.example.appengine.model.People;
 
 /**
  * Servlet implementation class AddPeopleServlet

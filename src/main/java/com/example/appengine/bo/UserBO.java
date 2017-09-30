@@ -1,10 +1,10 @@
 package com.example.appengine.bo;
 
-import dao.KeyDAO;
-import dao.UserDAO;
+import com.example.appengine.dao.KeyDAO;
+import com.example.appengine.dao.UserDAO;
 import java.util.ArrayList;
-import model.Key;
-import model.User;
+import com.example.appengine.model.Key;
+import com.example.appengine.model.User;
 
 public class UserBO {
 

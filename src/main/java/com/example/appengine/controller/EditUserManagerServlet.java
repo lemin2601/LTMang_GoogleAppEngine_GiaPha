@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import dao.UserDAO;
-import model.User;
+import com.example.appengine.dao.UserDAO;
+import com.example.appengine.model.User;
 
 /**
  * Servlet implementation class EditUserManagerServlet

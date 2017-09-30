@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import dao.PeopleDAO;
-import model.People;
+import com.example.appengine.dao.PeopleDAO;
+import com.example.appengine.model.People;
 import net.sf.json.JSONObject;
 
 /**

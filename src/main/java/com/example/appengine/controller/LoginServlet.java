@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import bo.UserBO;
-import model.User;
+import com.example.appengine.bo.UserBO;
+import com.example.appengine.model.User;
 
 /**
  * Servlet implementation class LoginServlet

@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import Utils.DateUtil;
-import dao.PeopleDAO;
-import model.People;
+import com.example.appengine.Utils.DateUtil;
+import com.example.appengine.dao.PeopleDAO;
+import com.example.appengine.model.People;
 
 /**
  * Servlet implementation class EditPeopleManagerServlet
