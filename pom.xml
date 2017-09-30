@@ -41,8 +41,10 @@
 
 <!-- [START_EXCLUDE] -->
     <appengine.maven.plugin>3.0.0</appengine.maven.plugin>
-    <maven.compiler.target>1.7</maven.compiler.target>
-    <maven.compiler.source>1.7</maven.compiler.source>
+    <!-- <maven.compiler.target>1.7</maven.compiler.target> -->
+    <!-- <maven.compiler.source>1.7</maven.compiler.source> -->
+	<source>${java.version}</source>
+	<target>${java.version}</target>
 <!-- [END_EXCLUDE] -->
   </properties>
 <!-- [END properties] -->
