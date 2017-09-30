@@ -5,8 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import library.DBConnect;
-import model.User;
+import com.example.appengine.library.DBConnect;
+import com.example.appengine.model.User;
 import net.sf.json.JSONObject;
 
 public class UserDAO {

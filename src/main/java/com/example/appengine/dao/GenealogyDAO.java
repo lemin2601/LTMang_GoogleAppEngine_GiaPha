@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import library.DBConnect;
-import model.Genealogy;
+import com.example.appengine.library.DBConnect;
+import com.example.appengine.model.Genealogy;
 
 public class GenealogyDAO {
 	   	private static final String TABLE_NAME = "genealogy";

@@ -10,8 +10,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import library.DBConnect;
-import model.Key;
+import com.example.appengine.library.DBConnect;
+import com.example.appengine.model.Key;
 
 
 /**

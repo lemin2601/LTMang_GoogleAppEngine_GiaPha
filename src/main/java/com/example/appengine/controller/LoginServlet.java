@@ -70,7 +70,6 @@ public class LoginServlet extends HttpServlet {
 			// Create cookies for first and last names.
 			Cookie cuser = new Cookie("username", user);
 			Cookie cpass = new Cookie("password", pass);
-			System.out.println(check+"check nè");
 			// Set expiry date after 24 Hrs for both the cookies.
 			cuser.setMaxAge(60 * 60 * 24);
 			cpass.setMaxAge(60 * 60 * 24);
