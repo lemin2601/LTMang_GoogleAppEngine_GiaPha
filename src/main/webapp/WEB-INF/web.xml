@@ -6,25 +6,6 @@
 	<welcome-file-list>
 		<welcome-file>public/index.jsp</welcome-file>
 	</welcome-file-list>
-	<!-- Servlets -->
-	<servlet>
-		<servlet-name>greetServlet</servlet-name>
-		<servlet-class>lemin.server.GreetingServiceImpl</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>greetServlet</servlet-name>
-		<url-pattern>/giapha_finish/greet</url-pattern>
-	</servlet-mapping>
-		<servlet>
-		<servlet-name>GiaPha</servlet-name>
-		<servlet-class>com.lemin.giapha.GiaPhaServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>GiaPha</servlet-name>
-		<url-pattern>/giapha</url-pattern>
-	</servlet-mapping>
-	
 	<servlet>
 		<servlet-name>AddGenealogyServlet</servlet-name>
 		<servlet-class>controller.AddGenealogyServlet</servlet-class>
