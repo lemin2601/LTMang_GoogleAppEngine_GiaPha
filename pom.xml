@@ -41,7 +41,7 @@
     <database>sqldemo</database>
 
 <!-- [START_EXCLUDE] -->
-    <appengine.maven.plugin>3.0.0</appengine.maven.plugin>
+    <appengine.maven.plugin>1.0.0</appengine.maven.plugin>
     <maven.compiler.target>1.7</maven.compiler.target>
     <maven.compiler.source>1.7</maven.compiler.source>
 	<!-- <source>${java.version}</source> -->
