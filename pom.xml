@@ -149,6 +149,12 @@
     <artifactId>javax.mail-api</artifactId>
     <version>1.6.0</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
+<dependency>
+    <groupId>org.ow2.asm</groupId>
+    <artifactId>asm</artifactId>
+    <version>4.0</version>
+</dependency>
 
 
     <!-- [END dependencies] -->
