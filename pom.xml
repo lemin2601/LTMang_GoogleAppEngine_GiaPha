@@ -41,10 +41,10 @@
 
 <!-- [START_EXCLUDE] -->
     <appengine.maven.plugin>3.0.0</appengine.maven.plugin>
-    <!-- <maven.compiler.target>1.7</maven.compiler.target> -->
-    <!-- <maven.compiler.source>1.7</maven.compiler.source> -->
-	<source>${java.version}</source>
-	<target>${java.version}</target>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+	<!-- <source>${java.version}</source> -->
+	<!-- <target>${java.version}</target> -->
 <!-- [END_EXCLUDE] -->
   </properties>
 <!-- [END properties] -->
@@ -139,7 +139,7 @@
 <dependency>
     <groupId>com.google.guava</groupId>
     <artifactId>guava</artifactId>
-    <version>15.0</version>
+    <version>11.0</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
