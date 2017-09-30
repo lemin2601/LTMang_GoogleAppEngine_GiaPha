@@ -24,7 +24,7 @@ public class ScratchSpace {
         final String s = userName + "|" + email + "|" + action;
         final HashFunction hashFunction = Hashing.sha1();
 		CharSequence cs = s;
-        final HashCode hashCode = hashFunction.hashString(cs);
+		final HashCode hashCode = (HashCode) cs;
         final String upper = hashCode.toString().toUpperCase();
         return group(upper);
     }
