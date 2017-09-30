@@ -37,8 +37,8 @@
 -->
     <INSTANCE_CONNECTION_NAME></INSTANCE_CONNECTION_NAME>
     <user>root</user>
-    <password>myPassword</password>
-    <database>sqldemo</database>
+    <password>123456</password>
+    <database>db_giapha</database>
 
 <!-- [START_EXCLUDE] -->
     <appengine.maven.plugin>1.0.0</appengine.maven.plugin>
