@@ -22,12 +22,12 @@ public class ScratchSpace {
 
     public static String createLicenseKey(String userName, String email, String action) {
         final String s = userName + "|" + email + "|" + action;
-        final HashFunction hashFunction = Hashing.sha1();
-		@SuppressWarnings("deprecation")
-		final HashCode hashCode = hashFunction.hashString(s);
+        // final HashFunction hashFunction = Hashing.sha1();
+		// @SuppressWarnings("deprecation")
+		// final HashCode hashCode = hashFunction.hashString(s);
 		//CharSequence cs = s;
 		//final HashCode hashCode = (HashCode) cs;
-        final String upper = hashCode.toString().toUpperCase();
+        final String upper = s.toString().toUpperCase();
         return group(upper);
     }
 //6DB1CC-B972DB-7035C0-955DFF-F7AC98-319EE8-0632
